@@ -13,7 +13,7 @@ jobs:
   worklfow:
     runs-on: ubuntu-latest
     steps:
-      - name: CHeckout Code
+      - name: Checkout Code
         uses: actions/checkout@v4
       
       - name: Set up Python

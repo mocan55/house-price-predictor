@@ -77,3 +77,11 @@ jobs:
           tags: mocan55/fastapi:${{ github.sha }}
           context: "."
           file: "Dockerfile"
+
+      - name: Build and push streamlit app
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          tags: mocan55/streamlit_app:${{ github.sha }}
+          context: "."
+          file: "streamlit_app/Dockerfile"

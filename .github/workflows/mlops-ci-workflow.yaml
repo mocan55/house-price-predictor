@@ -11,7 +11,7 @@ on:
 
 jobs:
   e2e_workflow:
-    runs-on: ubuntu-22.04-arm
+    runs-on: ubuntu-24.04-arm
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
